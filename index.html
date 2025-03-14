@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compte à Rebours Vacances</title>
+    <link rel="stylesheet" href="style.css?=V1.1">
+</head>
+<body>
+    <div class="container">
+        <button id="toggleMode" class="toggle-button" title="Changer le mode">🌙</button>
+        <h1>Prochaines vacances :</h1>
+        <div class="box">
+            <p id="vacance">Calcul en cours...</p>
+            <p id="compteur"></p>
+        </div>
+
+        <a class="download-button" href="app.html">Télécharger l'Application</a>
+    </div>
+
+    <div class="add-vacances">
+        <div class="premier">
+            <h2>Ajouter vos propres vacances :</h2>
+            
+            <div class="vacance">
+                <label for="nomVacance">Nom :</label>
+                <input type="text" id="nomVacance" placeholder="Ex: Vacance perso">
+            </div>
+            
+            <div class="vacance">
+                <label for="dateVacance">Date :</label>
+                <input type="date" id="dateVacance">
+            </div>
+            
+            <button id="ajouterVacance">Ajouter</button>
+        </div>
+        <div class="deuxieme">
+            <button id="resetVacances">Réinitialiser mes vacances</button>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>Version V1.1 fait par Ant-V</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

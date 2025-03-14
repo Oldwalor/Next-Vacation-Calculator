@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    margin-top: 20vh;
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+    background-color: #333;
+    border: 2px solid white;
+    font-size: 40px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#compteur {
+    font-size: 30px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+#vacance {
+    font-size: 32px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.footer {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+}
+
+input[type="text"],
+input[type="date"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-width: 300px; 
+}
+
+@media (min-width: 768px) {
+    .add-vacances {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+    input[type="text"],
+    input[type="date"] {
+        width: auto; 
+    }
+}
+
+#ajouterVacance {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+#ajouterVacance:hover {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+#resetVacances {
+    margin-top: 30px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+#resetVacances:hover{
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.add-vacances {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+}
+
+.vacance {
+    display: flex; 
+    align-items: center;
+    margin: 10px 0;
+}
+
+label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.download-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.download-button:hover {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
