@@ -168,3 +168,49 @@ label {
     transform: scale(1.05);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
+
+.fullscreen-button {
+    position: absolute;
+    top: 38%;
+    right: 34%;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: inherit;
+    z-index: 10;
+    transition: transform 0.3s ease;
+    color: black;
+}
+
+.fullscreen-button:hover {
+    transform: scale(1.2);
+}
+
+.box.fullscreen-mode {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.box.fullscreen-mode #vacance {
+    font-size: 100px;
+    color: white;
+    font-family: Impact, fantasy;
+}
+
+.box.fullscreen-mode #compteur {
+    font-size: 130px;
+    color: white;
+    font-family: Impact, fantasy;
+}
+
